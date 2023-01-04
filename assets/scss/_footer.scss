@@ -1,0 +1,40 @@
+ ul {
+   list-style: none;
+ }
+
+ li {
+   
+   // margin-left: -38px;
+
+ }
+
+ .footer {
+   padding-top: 45px;
+   background-color: $color-dark;
+  
+
+   &-title {
+     color: darken($color-white, 15%);
+     font-size: 1.125rem;
+   }
+   &-fifth {
+     color: $color-white;
+     text-align: center;
+     margin: 20px 0;
+     letter-spacing: 0.03em;
+   }
+ }
+
+ .footer ul {
+   // убирает отступы, что-бы h4 и ul>li находились на одном уровне
+   padding: 0;
+ }
+.footer ul a {
+  color: darken($color-white, 55%);
+}
+.footer ul a:hover {
+  color: $color-white;
+}
+.footer strong {
+  font-weight: 550;
+}
