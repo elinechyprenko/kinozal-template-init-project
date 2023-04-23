@@ -1,175 +1,171 @@
 .main {
-    @extend %margin-bottom-lg;
+ @extend %margin-bottom-lg;
 
-    .site-search {
-        margin-bottom: $gap*3;
-    }
-    .user-login{
-        margin-bottom: $gap*4;
-    }
+ .site-search {
+  margin-bottom: $gap * 3;
+ }
+ .user-login {
+  margin-bottom: $gap * 4;
+ }
 }
 .new-films {
-        position: relative;
-            overflow: hidden;
-    &-row {
-    margin-right: (-$gap / 2);
-    margin-left: (-$gap / 2);
-    margin-bottom: -$gap;
-    }
-    &-title {
-    margin: -10px 0 1em;
-    font-size: 3rem;
+ position: relative;
+ overflow: hidden;
+ &-row {
+  margin-right: (-$gap / 2);
+  margin-left: (-$gap / 2);
+  margin-bottom: -$gap;
+ }
+ &-title {
+  margin: -10px 0 1em;
+  font-size: 3rem;
 
-        &::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            border-bottom: 3px solid lighten($color-accent,15%);
-            margin: 0.85em 0px 0 15px;
-        }
-    }
-    &-iteam{
-    padding-right: $gap / 2;
-    padding-left: $gap / 2;
-    margin-bottom: $gap;
-        &:hover .new-films-iteam__title {
-        color: $color-white;
-        }
+  &::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   border-bottom: 3px solid lighten($color-accent, 15%);
+   margin: 0.85em 0px 0 15px;
+  }
+ }
+ &-iteam {
+  padding-right: $gap / 2;
+  padding-left: $gap / 2;
+  margin-bottom: $gap;
+  &:hover .new-films-iteam__title {
+   color: $color-white;
+  }
 
-    &__thumbnail {
-        margin-bottom: 0;
-        &:hover {
-            background-color: $color-accent;
-            border-color: $color-accent;
-            }
-    }
-        &__title {
-        font-size: 1rem;
-        font-weight: bold;
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: center;
-        max-width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    
-
-    }
+  &__thumbnail {
+   margin-bottom: 0;
+   &:hover {
+    background-color: $color-accent;
+    border-color: $color-accent;
+   }
+  }
+  &__title {
+   font-size: 1rem;
+   font-weight: bold;
+   margin-top: 0;
+   margin-bottom: 0;
+   text-align: center;
+   max-width: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+  }
+ }
 }
 
 .top-films {
-    position: relative;
-    overflow: hidden;
+ position: relative;
+ overflow: hidden;
 
-    &-title {
-    margin: 60px 0 45px 45px;
-    font-size: 2.5rem;
+ &-title {
+  margin: 60px 0 45px 45px;
+  font-size: 2.5rem;
 
-    &::before {
-        position: absolute;
-        content: '';
-        width: 30px;
-        border-bottom: 3px solid lighten($color-accent, 20%);
-        margin-top: 0.25em;
-        margin-right: 15px;
-        left: 0px;
-        
-        
-    }
+  &::before {
+   position: absolute;
+   content: "";
+   width: 30px;
+   border-bottom: 3px solid lighten($color-accent, 20%);
+   margin-top: 0.25em;
+   margin-right: 15px;
+   left: 0px;
+  }
 
-    &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        border-bottom: 3px solid $color-accent-light;
-        margin: 0.85em 0 0 15px;
-    }
-    }
-    &-row {
-    margin-right: (-$gap / 2);
-    margin-left: (-$gap / 2);
-    margin-bottom: -$gap;
-    }
-    &-iteam {
-    padding-right: $gap / 2;
-    padding-left: $gap / 2;
-    margin-bottom: $gap;
+  &::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   border-bottom: 3px solid $color-accent-light;
+   margin: 0.85em 0 0 15px;
+  }
+ }
+ &-row {
+  margin-right: (-$gap / 2);
+  margin-left: (-$gap / 2);
+  margin-bottom: -$gap;
+ }
+ &-iteam {
+  padding-right: $gap / 2;
+  padding-left: $gap / 2;
+  margin-bottom: $gap;
 
-        &:hover .top-films-iteam__title {
-            color: $color-white;
-        }
+  &:hover .top-films-iteam__title {
+   color: $color-white;
+  }
 
-    &__thumbnail{
-    margin-bottom: 0;
+  &__thumbnail {
+   margin-bottom: 0;
 
-        &:hover {
-            background-color: $color-accent;
-            border-color: $color-accent;
-        }
-    }
-    &__title{
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0 !important;
-    }
-    }
+   &:hover {
+    background-color: $color-accent;
+    border-color: $color-accent;
+   }
+  }
+  &__title {
+   font-size: 1rem;
+   font-weight: bold;
+   text-align: center;
+   max-width: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   margin: 0 !important;
+  }
+ }
 }
 
 .films-news {
-    position: relative;
-    overflow: hidden;
-    &-title{
-    margin: 60px 0 45px 45px;
-    font-size: 2.5rem;
+ position: relative;
+ overflow: hidden;
+ &-title {
+  margin: 60px 0 45px 45px;
+  font-size: 2.5rem;
 
-        &::before {
-        position: absolute;
-        content: '';
-        width: 30px;
-        border-bottom: 3px solid $color-accent-light;
-        margin-top: 0.25em;
-        margin-right: 15px;
-        left: 0px;
-    }
-        &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        border-bottom: 3px solid $color-accent-light;
-        margin: 0.85em 0 0 15px;
-    }
-}
-&-iteam {
-    margin-bottom: 35px;
+  &::before {
+   position: absolute;
+   content: "";
+   width: 30px;
+   border-bottom: 3px solid $color-accent-light;
+   margin-top: 0.25em;
+   margin-right: 15px;
+   left: 0px;
+  }
+  &::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   border-bottom: 3px solid $color-accent-light;
+   margin: 0.85em 0 0 15px;
+  }
+ }
+ &-iteam {
+  margin-bottom: 35px;
 
-    &:hover .films-news-iteam__thumbnail {
-        background-color: $color-accent;
-    }
-    &:hover a {
-        color: $color-accent;
-    }
-    &:hover .films-news-iteam__button {
-        background-color: $color-accent;
-        color: $color-white;
-    }
+  &:hover .films-news-iteam__thumbnail {
+   background-color: $color-accent;
+  }
+  &:hover a {
+   color: $color-accent;
+  }
+  &:hover .films-news-iteam__button {
+   background-color: $color-accent;
+   color: $color-white;
+  }
 
-    &__button {
-        position: absolute;
-        right: 2.6%;
-        margin-bottom: 30px;
-    &__text {
-        text-align: justify;
-    }
-    }
-}
+  &__button {
+   position: absolute;
+   right: 2.6%;
+   margin-bottom: 30px;
+   &__text {
+    text-align: justify;
+   }
+  }
+ }
 }
 .thumbnail {
-    transition: background-color 0.25s;
+ transition: background-color 0.25s;
 }

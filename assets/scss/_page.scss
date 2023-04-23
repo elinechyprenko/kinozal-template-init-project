@@ -1,141 +1,128 @@
-
-
 .film-info {
-font-size: 1.2em;
-position: relative;
-overflow: hidden;
-  &-title {
+ font-size: 1.2em;
+ position: relative;
+ overflow: hidden;
+ &-title {
   font-size: 3rem;
   margin: -10px 0 1em;
 
-    &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    border-bottom: 3px solid $color-accent;
-    background-color: $color-accent;
-    margin: 0.85em 0 0 15px;
+  &::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   border-bottom: 3px solid $color-accent;
+   background-color: $color-accent;
+   margin: 0.85em 0 0 15px;
   }
-}
-    &__video {
-      border: 1px solid darken($color-gray, 4%);
-    }
+ }
+ &__video {
+  border: 1px solid darken($color-gray, 4%);
+ }
 
-   &__well {
-     border-top-left-radius: 0;
-     border-top-right-radius: 0;
-     
-
-   }
-   &__wrapper {
-     white-space: nowrap;
-    display: inline-block;
-    margin-right: 15px;
-   }
-   &__badge {
-    font-size: 0.8em;
-   }
+ &__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+ }
+ &__wrapper {
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 15px;
+ }
+ &__badge {
+  font-size: 0.8em;
+ }
 }
 .film-comments,
 .film-description {
-  position: relative;
-  overflow: hidden;
-  &-title {
-      margin: 60px 0 45px 45px;
-      font-size: 2.5rem;
-    &::after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      border-bottom: 3px solid $color-accent-light;
-      margin: 0.85em 0 0 15px;
-    }
-    &::before {
-      position: absolute;
-      content: "";
-      width: 30px;
-      border-bottom: 3px solid $color-accent-light;
-      margin-top: 0.25em;
-      margin-right: 15px;
-      left: 0px;
-    }
+ position: relative;
+ overflow: hidden;
+ &-title {
+  margin: 60px 0 45px 45px;
+  font-size: 2.5rem;
+  &::after {
+   position: absolute;
+   content: "";
+   width: 100%;
+   border-bottom: 3px solid $color-accent-light;
+   margin: 0.85em 0 0 15px;
   }
+  &::before {
+   position: absolute;
+   content: "";
+   width: 30px;
+   border-bottom: 3px solid $color-accent-light;
+   margin-top: 0.25em;
+   margin-right: 15px;
+   left: 0px;
+  }
+ }
 }
 .film-comments-form {
-position: relative;
-  overflow: hidden;
+ position: relative;
+ overflow: hidden;
 
-  &__title {
-    margin: 60px 0 45px 45px;
-    font-size: 2.5rem;
+ &__title {
+  margin: 60px 0 45px 45px;
+  font-size: 2.5rem;
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      border-bottom: 3px solid $color-accent-light;
-      margin: 0.85em 0 0 15px;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 30px;
-      border-bottom: 3px solid $color-accent-light;
-      margin-top: 0.25em;
-      margin-right: 15px;
-      left: 0px;
-    }
+  &::after {
+   position: absolute;
+   content: "";
+   width: 100%;
+   border-bottom: 3px solid $color-accent-light;
+   margin: 0.85em 0 0 15px;
   }
+
+  &::before {
+   position: absolute;
+   content: "";
+   width: 30px;
+   border-bottom: 3px solid $color-accent-light;
+   margin-top: 0.25em;
+   margin-right: 15px;
+   left: 0px;
+  }
+ }
 }
 .film-comments-form {
-  &__button {
-    margin-top: 15px;
-    float: right;
-  }
+ &__button {
+  margin-top: 15px;
+  float: right;
+ }
 }
 
 ul {
-  list-style: none;
+ list-style: none;
 }
-
-li {
-
-  // margin-left: -38px;
-
-}
-
 .footer {
-  padding-top: 45px;
-  background-color: $color-dark;
+ padding-top: 45px;
+ background-color: $color-dark;
 
+ &-title {
+  color: darken($color-white, 15%);
+  font-size: 1.125rem;
+ }
 
-  &-title {
-    color: darken($color-white, 15%);
-    font-size: 1.125rem;
-  }
-
-  &-fifth {
-    color: $color-white;
-    text-align: center;
-    margin: 20px 0;
-    letter-spacing: 0.03em;
-  }
+ &-fifth {
+  color: $color-white;
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 0.03em;
+ }
 }
 
 .footer ul {
-  // убирает отступы, что-бы h4 и ul>li находились на одном уровне
-  padding: 0;
+ padding: 0;
 }
 
 .footer ul a {
-  color: darken($color-white, 55%);
+ color: darken($color-white, 55%);
 }
 
 .footer ul a:hover {
-  color: $color-white;
+ color: $color-white;
 }
 
 .footer strong {
-  font-weight: 550;
+ font-weight: 550;
 }

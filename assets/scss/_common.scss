@@ -1,27 +1,26 @@
 body {
-    font-family: $font-main;
-    font-size: $font-size;
-    overflow-y: scroll;
-    max-width: 100%;
+ font-family: $font-main;
+ font-size: $font-size;
+ overflow-y: scroll;
+ max-width: 100%;
 }
 html {
-    font-family: $font-header;
-    font-size: $font-size;
+ font-family: $font-header;
+ font-size: $font-size;
 }
 a {
-    text-decoration: none;
-    color: $color-primary;
+ text-decoration: none;
+ color: $color-primary;
 
-    &:hover,
-    &:focus {
-        text-decoration: none;
-        color: $color-accent;
-    }
+ &:hover,
+ &:focus {
+  text-decoration: none;
+  color: $color-accent;
+ }
 }
 h1 {
-    font-family: $font-header;
+ font-family: $font-header;
 }
 h2 {
-    font-family: $font-header;
+ font-family: $font-header;
 }
-

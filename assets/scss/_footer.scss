@@ -1,40 +1,31 @@
- ul {
-   list-style: none;
+ul {
+ list-style: none;
+}
+.footer {
+ padding-top: 45px;
+ background-color: $color-dark;
+
+ &-title {
+  color: darken($color-white, 15%);
+  font-size: 1.125rem;
  }
-
- li {
-   
-   // margin-left: -38px;
-
+ &-fifth {
+  color: $color-white;
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 0.03em;
  }
+}
 
- .footer {
-   padding-top: 45px;
-   background-color: $color-dark;
-  
-
-   &-title {
-     color: darken($color-white, 15%);
-     font-size: 1.125rem;
-   }
-   &-fifth {
-     color: $color-white;
-     text-align: center;
-     margin: 20px 0;
-     letter-spacing: 0.03em;
-   }
- }
-
- .footer ul {
-   // убирает отступы, что-бы h4 и ul>li находились на одном уровне
-   padding: 0;
- }
+.footer ul {
+ padding: 0;
+}
 .footer ul a {
-  color: darken($color-white, 55%);
+ color: darken($color-white, 55%);
 }
 .footer ul a:hover {
-  color: $color-white;
+ color: $color-white;
 }
 .footer strong {
-  font-weight: 550;
+ font-weight: 550;
 }

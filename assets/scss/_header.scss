@@ -1,40 +1,36 @@
 .header {
-    @extend %margin-bottom-lg
+ @extend %margin-bottom-lg;
 }
 .header-logo {
-    padding: 100px 0;
-    text-align: center;
-    background-color: $color-dark;
-    background-image: url(../img/header-bg.jpg);
-    background-position: center;
-    background-size: cover;
+ padding: 100px 0;
+ text-align: center;
+ background-color: $color-dark;
+ background-image: url(../img/header-bg.jpg);
+ background-position: center;
+ background-size: cover;
 }
 .header-logo__title {
-    display: block;
-    color: $color-accent;
-    font-family: $font-header;
-    @include xs-min {
-        font-size: 3.5rem;
-        letter-spacing: 0.33em;
-        padding-left: 0.33em;
-
-    }
-    @include xs {
-        font-size: 2.5rem;
-        letter-spacing: 0.2em;
-    }
+ display: block;
+ color: $color-accent;
+ font-family: $font-header;
+ @include xs-min {
+  font-size: 3.5rem;
+  letter-spacing: 0.33em;
+  padding-left: 0.33em;
+ }
+ @include xs {
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+ }
 }
 .header-logo__description {
-    display: block;
-    color: $color-white;
-    font-size: 1.15rem;
-    letter-spacing: 0.2em;
-    font-family: $font-main;
+ display: block;
+ color: $color-white;
+ font-size: 1.15rem;
+ letter-spacing: 0.2em;
+ font-family: $font-main;
 }
-.header-logo__title, 
+.header-logo__title,
 .header-logo__description {
-    // первый 0-смещение влева, второй 0-смещение вверх 5px - тень со всех сторон
-    text-shadow: 0 0 5px $color-black,
-            0 0 10px $color-black,
-            0 0 20px $color-black;
+ text-shadow: 0 0 5px $color-black, 0 0 10px $color-black, 0 0 20px $color-black;
 }
